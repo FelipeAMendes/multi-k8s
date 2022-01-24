@@ -17,11 +17,11 @@ spec:
         image: felipeamendes/multi-server
         resources:
           requests:
-            memory: "300Mi"
-            cpu: "500m"
+            memory: "1Gi"
+            cpu: "0.5"
           limits:
-            memory: "500Mi"
-            cpu: "1000m"
+            memory: "1.5Gi"
+            cpu: "1"
         ports:
         - containerPort: 5000
         env:

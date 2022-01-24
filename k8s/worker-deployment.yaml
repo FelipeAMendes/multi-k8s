@@ -15,13 +15,6 @@ spec:
       containers:
       - name: worker
         image: felipeamendes/multi-worker
-        resources:
-          requests:
-            memory: "1Gi"
-            cpu: "0.5"
-          limits:
-            memory: "1.5Gi"
-            cpu: "1"
         env:
         - name: REDIS_HOST
           value: redis-service
